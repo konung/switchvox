@@ -57,7 +57,7 @@ class Base
   # A standard REST call to get a list of entries
   def request(method, parameters={})
     body = wrap_json(method, parameters)
-    header   = {'Content-Type' => "text/json"}
+    header   = {'Content-Type' => "application/json"}
     # Send the request
     send_request(body, header)
 
